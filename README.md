@@ -10,7 +10,7 @@
         this.executeJsScript("window.scrollTo(0, document.body.scrollHeight)");
         List<WebElement> products = this.finds(Locators.MarketPageLocators.CARD_PRODUCT);
         int count = products.size();
-        assert count == 48 : String.format("Number of products per page %s. Expected 10.", count);
+        assert count == 10 : String.format("Number of products per page %s. Expected 10.", count);
         return products.get(0).getText();
     }
 
